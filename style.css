@@ -1,0 +1,21 @@
+.nav__bar {
+  display: flex;
+  background-color: aquamarine;
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+div,
+ul {
+  padding: 8px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+}
