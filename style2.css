@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 224, 47);
+  font-size: 20px;
+  font-family: "Chilanka", cursive;
+}
+
+.navbar__logo {
+  font-size: 24px;
+  padding: 8px 12px;
+}
+
+.navbar__logo i {
+  color: rgb(24, 22, 22);
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__menu li {
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.navbar__menu li:hover {
+  background-color: rgb(245, 140, 140);
+}
+
+.navbar__icons {
+  display: flex;
+}
+
+.navbar__icons i {
+  color: rgb(24, 22, 22);
+  padding: 8px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+.navbar__toggleBtn {
+  display: none;
+  position: absolute;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar__logo {
+    display: flex;
+    align-self: flex-start;
+  }
+  .navbar__menu {
+    display: flex-box;
+    justify-content: flex-end;
+    flex-flow: column;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar__menu li {
+    text-align: center;
+    margin: 2px 8px;
+  }
+
+  .navbar__icons {
+    display: none;
+  }
+
+  .navbar__toggleBtn {
+    display: block;
+    text-align: end;
+    color: seagreen;
+    right: 12px;
+    top: 8px;
+    font-size: 24px;
+  }
+
+  .navbar__menu.active,
+  .navbar__icons.active {
+    display: flex;
+  }
+}
