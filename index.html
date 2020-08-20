@@ -3,141 +3,338 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Youtube</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link href="style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     />
-    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>TCP School</title>
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <div class="logo">
-        <i class="fab fa-youtube"></i>
-        <a href="">Youtube</a>
+    <!--header-->
+    <header class="navbar">
+      <!--navbar header-->
+      <div class="navbar__headerline"><div class="navbar__header">
+        <ul>
+          <li><button>tcp school소개</button></li>
+          <li><button>수업가이드</button></li>
+          <li><button>로그인</button></li>
+          <li class="navbar__active"><button>회원가입</button></li>
+        </ul>
+        <div class="navbar__icon">
+          <button><i class="fas fa-search"></i></button>
+        </div>
+      </div></div>
+      
+      <!--navbar menu-->
+      <div class="navbar__menu">
+        <a href="" class="navbar__logo">
+          TCPschool.com
+        </a>
+        <ul class="navbar__buttons">
+          <li class="first__button"><button>코딩 이야기</button></li>
+          <li><button>코딩의 첫걸음</button></li>
+          <li><button>코딩과 데이터</button></li>
+          <li><button>데이터와 소통</button></li>
+          <li><button>코딩의 고수</button></li>
+        </ul>
       </div>
-      <div class="icons">
-        <i class="fas fa-search"></i>
-        <i class="fas fa-ellipsis-v"></i>
+
+      <!--menulist-->
+      <div class="menulist">
+        <ul class="menubar">
+          <li class="listbar1">
+            <ul class="listbar__menu">
+              <li>Web Basic</li>
+              <li>코딩수학</li>
+              <li>Deep Learning</li>
+              <li>딥러닝</li>
+            </ul>
+          </li>
+          <li class="listbar2">
+            <ul class="listbar__menu">
+              <li>Web Basic</li>
+              <li>코딩수학</li>
+              <li>Deep Learning</li>
+              <li>딥러닝</li>
+            </ul>
+          </li>
+          <li class="listbar3"><ul class="listbar__menu">
+              <li>Web Basic</li>
+              <li>코딩수학</li>
+              <li>Deep Learning</li>
+              <li>딥러닝</li>
+            </ul></li>
+          <li class="listbar4"><ul class="listbar__menu">
+              <li>Web Basic</li>
+              <li>코딩수학</li>
+              <li>Deep Learning</li>
+              <li>딥러닝</li>
+            </ul></li>
+          <li class="listbar5"><ul class="listbar__menu">
+              <li>Web Basic</li>
+              <li>코딩수학</li>
+              <li>Deep Learning</li>
+              <li>딥러닝</li>
+            </ul></li>
+        </ul>
       </div>
     </header>
 
-    <!-- Video player -->
-    <section class="player">
-      <video controls src="video.mp4"></video>
+    <!--imglinks-->
+    <section class="imglinks">
+      <span class="img__left"><img src="image1.jpg" alt="" /></span>
+      <span class="img__right"><img src="image2.jpg" alt="" /></span>
     </section>
 
-    <!-- Information -->
-    <section class="info">
-      <!-- Metadata-->
-      <div class="metadata">
-        <ul class="hashtags">
-          <li>#DreamCoding</li>
-          <li>#DreamCoders</li>
-          <li>#Ellie</li>
-        </ul>
-        <div class="titleAndButton">
-          <span class="title">
-            Clone Coding : Youtube Mobile Website 유튜브 모바일 웹사이트 따라
-            만들기 | 프론트 엔드 개발자 입문편: HTML, CSS, Javascript 드림코딩과
-            함께하는 프론트 엔드 실전 입문편
-          </span>
-          <button class="moreBtn">
-            <i class="fas fa-caret-down"></i>
-          </button>
-        </div>
-        <span class="views">1M views 1 month ago</span>
-      </div>
-
-      <!-- Actions-->
-      <div class="actions">
+    <!--tablelinks-->
+    <section class="tablelinks">
+      <ul class="coding__story">
+        <li class="title">코딩이야기</li>
         <li>
-          <button>
-            <i class="active fas fa-thumbs-up"></i><span>1K</span>
+          <button class="block1">
+            <div class="info">
+              <div class="sub_title">인터넷의 이해</div>
+              <div class="link_title">Web Basic</div>
+            </div>
+              <i class="fas fa-angle-right"></i>
+            </div>
           </button>
         </li>
         <li>
-          <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
-        </li>
+            <button class="block2">
+              <div class="info">
+                <div class="sub_title">코딩 사고</div>
+                <div class="link_title">코딩 수학</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
+          <li>
+            <button class="block3">
+              <div class="info">
+                <div class="sub_title">스스로 학습</div>
+                <div class="link_title">Deep Learning</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
+          <li>
+            <button class="block4">
+              <div class="info">
+                <div class="sub_title">2018년도 개정판</div>
+                <div class="link_title">딥러닝(개정판)</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
+      </ul>
+      <ul class="coding__story">
+        <li class="title">코딩이야기</li>
         <li>
-          <button><i class="fas fa-share"></i><span>Share</span></button>
-        </li>
-        <li>
-          <button><i class="fas fa-plus"></i><span>Save</span></button>
-        </li>
-        <li>
-          <button>
-            <i class="fab fa-font-awesome-flag"></i><span>Report</span>
+          <button class="block1">
+            <div class="info">
+              <div class="sub_title">인터넷의 이해</div>
+              <div class="link_title">Web Basic</div>
+            </div>
+              <i class="fas fa-angle-right"></i>
+            </div>
           </button>
         </li>
-      </div>
-
-      <!-- Channel Description-->
-      <div class="channel">
-        <div class="metadata">
-          <img src="face.jpg" alt="얼굴사진" />
-          <div class="info">
-            <span class="name">드림코딩 by 엘리</span>
-            <span class="subscribers">1M subscribers</span>
-          </div>
-          <button class="subscribe">Subscribe</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- UpNext -->
-    <section class="UpNext">
-      <span class="title">Up next</span>
-      <ul>
-        <li class="item">
-          <div class="img">
-            <img src="1.jpg" alt="" />
-          </div>
-          <div class="info">
-            <span class="title"
-              >프론트엔드 강의, 프론트 엔드 개발자가 되고싶다면? 웹개발 입문자편
-              강의를 시작합니다. (HTML, CSS, Javascript + 실전 프로젝트)</span
-            >
-            <span class="name">드림코딩 by 엘리</span>
-            <span class="views">82K views</span>
-          </div>
-          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        <li>
+            <button class="block2">
+              <div class="info">
+                <div class="sub_title">코딩 사고</div>
+                <div class="link_title">코딩 수학</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
+          <li>
+            <button class="block3">
+              <div class="info">
+                <div class="sub_title">스스로 학습</div>
+                <div class="link_title">Deep Learning</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
+          <li>
+            <button class="block4">
+              <div class="info">
+                <div class="sub_title">2018년도 개정판</div>
+                <div class="link_title">딥러닝(개정판)</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
+      </ul>
+      <ul class="coding__story">
+        <li class="title">코딩이야기</li>
+        <li>
+          <button class="block1">
+            <div class="info">
+              <div class="sub_title">인터넷의 이해</div>
+              <div class="link_title">Web Basic</div>
+            </div>
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </button>
         </li>
-        <li class="item">
-          <div class="img">
-            <img src="2.jpg" alt="" />
-          </div>
-          <div class="info">
-            <span class="title"
-              >프론트엔드 강의, 프론트 엔드 개발자가 되고싶다면? 웹개발 입문자편
-              강의를 시작합니다. (HTML, CSS, Javascript + 실전 프로젝트)</span
-            >
-            <span class="name">드림코딩 by 엘리</span>
-            <span class="views">82K views</span>
-          </div>
-          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        <li>
+            <button class="block2">
+              <div class="info">
+                <div class="sub_title">코딩 사고</div>
+                <div class="link_title">코딩 수학</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
+          <li>
+            <button class="block3">
+              <div class="info">
+                <div class="sub_title">스스로 학습</div>
+                <div class="link_title">Deep Learning</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
+          <li>
+            <button class="block4">
+              <div class="info">
+                <div class="sub_title">2018년도 개정판</div>
+                <div class="link_title">딥러닝(개정판)</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
+      </ul>
+      <ul class="coding__story">
+        <li class="title">코딩이야기</li>
+        <li>
+          <button class="block1">
+            <div class="info">
+              <div class="sub_title">인터넷의 이해</div>
+              <div class="link_title">Web Basic</div>
+            </div>
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </button>
         </li>
-        <li class="item">
-          <div class="img">
-            <img src="3.jpg" alt="" />
-          </div>
-          <div class="info">
-            <span class="title"
-              >프론트엔드 강의, 프론트 엔드 개발자가 되고싶다면? 웹개발 입문자편
-              강의를 시작합니다. (HTML, CSS, Javascript + 실전 프로젝트)</span
-            >
-            <span class="name">드림코딩 by 엘리</span>
-            <span class="views">82K views</span>
-          </div>
-          <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+        <li>
+            <button class="block2">
+              <div class="info">
+                <div class="sub_title">코딩 사고</div>
+                <div class="link_title">코딩 수학</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
+          <li>
+            <button class="block3">
+              <div class="info">
+                <div class="sub_title">스스로 학습</div>
+                <div class="link_title">Deep Learning</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
+          <li>
+            <button class="block4">
+              <div class="info">
+                <div class="sub_title">2018년도 개정판</div>
+                <div class="link_title">딥러닝(개정판)</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
+      </ul>
+      <ul class="coding__story">
+        <li class="title">코딩이야기</li>
+        <li>
+          <button class="block1">
+            <div class="info">
+              <div class="sub_title">인터넷의 이해</div>
+              <div class="link_title">Web Basic</div>
+            </div>
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </button>
         </li>
+        <li>
+            <button class="block2">
+              <div class="info">
+                <div class="sub_title">코딩 사고</div>
+                <div class="link_title">코딩 수학</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
+          <li>
+            <button class="block3">
+              <div class="info">
+                <div class="sub_title">스스로 학습</div>
+                <div class="link_title">Deep Learning</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
+          <li>
+            <button class="block4">
+              <div class="info">
+                <div class="sub_title">2018년도 개정판</div>
+                <div class="link_title">딥러닝(개정판)</div>
+              </div>
+                <i class="fas fa-angle-right"></i>
+              </div>
+            </button>
+          </li>
       </ul>
     </section>
+
+    <!--footer-->
+    <footer>
+        <div class="links__bar">
+            <ul>
+                <li>TCP SCHOOL 소개</li>
+                <li>개인정보처리방침</li>
+                <li>사이트 이용규정</li>
+                <li>공지사항</li>
+                <li>질문답변</li>
+                <li>소스&팁</li>
+                <li class="last__block">광고/제휴문의</li>
+            </ul>
+        </div>
+        <div class="views">
+            <div class="views__logo">TCPSCHOOL.com</div>
+            <div class="view__info">
+                <ul>
+                    <li>오늘 <span>2,348</span></li>
+                    <li>어제 <span>2,348</span></li>
+                    <li>최대 <span>2,348</span></li>
+                    <li>전체 <span>2,348</span></li>
+                </ul>
+                <div class="footer__link">
+                    copyright 2018 tcpschool.co.ltd.all rights reserved. contact webmaster for more information.
+                </div>
+            </div>
+        </div>
+    </footer>
   </body>
 </html>
