@@ -110,66 +110,81 @@ header.navbar {
   width: 30%;
 }
 
-.navbar .navbar__menu .navbar__buttons {
+/*--------------------------------------*/
+
+.navbar .navbar__menu .dropdown {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 70%;
 }
 
-.navbar .navbar__menu .navbar__buttons button:hover {
-  color: blue;
+.navbar .navbar__menu .dropdown li {
+  width: 100%;
+  height: 100%;
 }
 
-.navbar .navbar__menu .navbar__buttons li,
-.navbar .navbar__menu .navbar__buttons a {
+.navbar .navbar__menu .dropdown li:first-child {
+  border-left: solid 1px grey;
+}
+
+.navbar .navbar__menu .dropdown li a.dropdown__btn {
   border-right: solid 1px grey;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
-}
-
-.navbar .navbar__menu .navbar__buttons li.first__button {
-  border-left: solid 1px grey;
-}
-
-.navbar .navbar__menu .navbar__buttons li button {
-  border: none;
-  cursor: pointer;
-  outline: none;
-  background-color: white;
-  font-weight: bolder;
-  font-size: 14px;
-  width: 100%;
-}
-
-/*------------------------------*/
-.navbar__buttons {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown__content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  width: 20%;
-}
-.dropdown__content a {
-  float: none;
+  align-items: center;
+  text-decoration: none;
   color: black;
-  display: block;
-  border: solid 1px red;
+  padding: 16px 0;
 }
 
-.dropdown__content a:hover {
+.navbar .navbar__menu .dropdown li a:hover {
   color: blue;
 }
 
-.navbar__buttons:hover .dropdown__content {
+/*------------------------------*/
+
+.navbar .navbar__menu .dropdown .dropdown__content {
+  position: absolute;
+  width: 100%;
+  margin-top: 1px;
+  margin-right: 80%;
+  max-width: 140px;
+}
+
+.navbar .navbar__menu .dropdown .dropdown__content a {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.navbar .navbar__menu .dropdown .dropdown__content.first {
+  border-left: 1px solid red;
+  background-color: blue;
+}
+
+.navbar .navbar__menu .dropdown .dropdown__content.last {
+  border-right: 1px solid red;
+}
+
+.navbar .navbar__menu .dropdown .dropdown__content a:last-child {
+  border-bottom: 1px solid grey;
+}
+
+.navbar .navbar__menu .dropdown .dropdown__content a:hover {
+  color: blue;
+}
+
+.navbar .navbar__menu li:hover .dropdown__content {
   display: block;
 }
+
 /*------------------------------*/
 section.imglinks {
   display: flex;
